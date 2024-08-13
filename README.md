@@ -2,6 +2,8 @@
 
 ### Project made during the Ultimate React Course
 
+### Built with React Query and supabase
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
