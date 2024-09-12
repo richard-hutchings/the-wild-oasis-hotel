@@ -107,7 +107,7 @@ function CabinRow({ cabin }) {
             </Menus.List>
 
             <Modal.Window name="edit">
-              <CreateCabinForm cabinToEdit={cabin} />
+              <CreateCabinForm cabinToEdit={Cabin} />
             </Modal.Window>
 
             <Modal.Window name="delete">
