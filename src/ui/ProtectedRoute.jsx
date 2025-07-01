@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import UseUser from "../features/authentication/UseUser";
+import { useUser } from "../features/authentication/useUser";
 import Spinner from "./Spinner";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -15,7 +15,7 @@ const FullPage = styled.div`
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
   // 1. Load the authenticated user
-  const { isLoading, isAuthenticated } = UseUser();
+  const { isLoading, isAuthenticated } = useUser();
 
   // 2. if there is NO authenticated user, then redirect to /login
   useEffect(
