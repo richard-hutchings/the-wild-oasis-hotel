@@ -25,6 +25,7 @@ function LoginForm() {
     );
   }
 
+  // I have hard coded value= "password" instead of {password}
   return (
     <Form onSubmit={handleSubmit}>
       <FormRowVertical label="Email address">
@@ -38,7 +39,7 @@ function LoginForm() {
           disabled={isLoading}
         />
       </FormRowVertical>
-      // hard coded password
+      
       <FormRowVertical label="Password">
         <Input
           type="password"
