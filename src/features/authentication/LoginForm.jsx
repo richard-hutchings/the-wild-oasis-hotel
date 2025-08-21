@@ -25,7 +25,6 @@ function LoginForm() {
     );
   }
 
-  // I have hard coded value= "password" instead of {password}
   return (
     <Form onSubmit={handleSubmit}>
       <FormRowVertical label="Email address">
@@ -45,7 +44,7 @@ function LoginForm() {
           type="password"
           id="password"
           autoComplete="current-password"
-          value="password"
+          value={password}
           onChange={(e) => setPassword(e.target.value)}
           disabled={isLoading}
         />
