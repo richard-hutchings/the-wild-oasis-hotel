@@ -38,13 +38,13 @@ function LoginForm() {
           disabled={isLoading}
         />
       </FormRowVertical>
-
+      // hard coded password
       <FormRowVertical label="Password">
         <Input
           type="password"
           id="password"
           autoComplete="current-password"
-          value={password}
+          value="password"
           onChange={(e) => setPassword(e.target.value)}
           disabled={isLoading}
         />
